@@ -1,0 +1,43 @@
+apk update
+apk add nano python3
+mkdir atelier-ray
+cd atelier-ray
+
+cat > index.html
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier Ray Milano</title>
+    <style>
+        body {
+            background-color: #050505;
+            color: #d4af37;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Courier New', Courier, monospace;
+            text-transform: uppercase;
+        }
+        .container {
+            text-align: center;
+            border: 1px solid #d4af37;
+            padding: 40px;
+        }
+        h1 { font-size: 2rem; margin-bottom: 10px; }
+        p { font-size: 0.8rem; letter-spacing: 3px; color: #fff; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Atelier Ray</h1>
+        <p>Milano | Limited Series</p>
+    </div>
+</body>
+</html>
+
+python3 -m http.server 8080
